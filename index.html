@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <!-- llamo al archivo CSS de Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!-- llamo al archivo de CSS -->
+     <link rel="stylesheet" href="style.css">
+     <!-- llamo al archivo de JavaScript -->
+    <script defer src="./main.js"> </script>
+
+    <title>BONBONS</title>
+</head>
+<body>
+  <!-- contenedor para el encabezado de la pagina -->
+   <div>
+    <header>
+        <div>
+            <img src="Imágenes/Bonbons_Logo.png" alt="Logo de Bonbons">
+        </div> 
+        <div> 
+        <nav>
+            <ul>
+                <a href="#nosotros"><li>NOSOTROS</li></a> 
+                <a href="https://www.instagram.com/bonbons_07/?igsh=b2lxOGV3b3I4c2Y0"><li>CONTÁCTANOS</li></a>
+                <a href="https://www.instagram.com/bonbons_07/?igsh=b2lxOGV3b3I4c2Y0"><li>CATÁLOGO</li></a>
+                 
+             </ul>
+        </nav> 
+      </div> 
+    </header>
+    <div class="fondo">
+    </div>
+    <div class="presentación">
+        <div align='center'>
+        <h1>¿QUIENES SOMOS?</h1>
+        <P>Somos una microempresa que elabora y personaliza detalles a base de fresas con chocolate para todo tipo de ocasión.</P>
+    </div>
+    <!-- contenedor para poner una carrusel de bootstrap -->
+    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="Imágenes/SLIDE/SLIDE 1.png" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="Imágenes/SLIDE/SLIDE 2.jpeg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="Imágenes/SLIDE/SLIDE 3.jpeg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="Imágenes/SLIDE/SLIDE 4.png" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="Imágenes/SLIDE/SLIDE 5.png" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="Imágenes/SLIDE/SLIDE 6.png" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="Imágenes/SLIDE/SLIDE 7.jpeg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="Imágenes/SLIDE/SLIDE 8.png" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="Imágenes/SLIDE/SLIDE 9.png" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="Imágenes/SLIDE/SLIDE 10.jpeg" class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+    <!-- imagenes de productos -->
+    <div class="contenedor">
+    <div class="caja">
+        <img src="Imágenes/Fresas1.png" alt="Fresas">
+        <h1>FRESAS CHOCOLATADAS</h1>
+        <p>Producto de calidad, diferentes sabores y colores.</p>
+    </div>
+
+    <div class="caja">
+        <img src="Imágenes/FresasOsito.jpeg" alt="Fresas Osito">
+        <H1>DISEÑOS PERSONALIZADOS</H1>
+        <p>Puedes enviarnos el diseño que quieras y nosotros lo personalizamos según tu presupuesto y la ocasión.</p>
+    </div>
+
+    <div class="caja">
+        <img src="Imágenes/Fresas HP.jpeg" alt="Fresas Harry Potter">
+        <h1>REGALOS</h1>
+        <p>Te ayudamos a hacer del cumpleaños o de los festejos de tus seres queridos un día especial.</p>
+    </div>
+</div>
+<!-- contenedor general para poner todas las noticias -->
+ <div class="contenedor">
+ <!-- primera noticia --> 
+  <div class="noticias">
+    <h1>ESPECIALIDADES</h1>
+    <div id="contenido">
+      <!-- este contenedor es el que quiero ocultar/mostrar -->
+       <p>Fresas chocolatadas de chocolate oscuro, blanco, rosado y celeste, toppings adicionales de coco, almendras o cacahuate, corazón sorpresa relleno de cocoa en polvo o malvaviscos y zapatos de chocolate oscuro o blanco.
+       </p>
+    </div>
+    <button onclick='muestra_oculta("contenido")' class="btn btn-primary" form="contenido" >+</button>
+  </div>
+
+  <!-- segunda noticia --> 
+  <div class="noticias">
+    <h1>DESCUENTOS</h1>
+    <div id="contenido2">
+      <!-- este contenedor es el que quiero ocultar/mostrar -->
+       <p>Tenemos diferentes descuentos según las festividades en el año, puedes escribirnos a través de nuestras redes sociales y consultar si tenemos ofertas disponibles.
+       </p>
+    </div>
+    <button onclick="muestra_oculta('contenido2')" class="btn btn-primary" form="contenido2" >+</button>
+  </div>
+  <!-- tercera noticia -->
+  <div class="noticias">
+    <h1>ENVÍOS</h1>
+    <div id="contenido3">
+      <!-- este contenedor es el que quiero ocultar/mostrar -->
+      <p>Hacemos envíos únicamente en los departamentos de Santa Bárbara, Cortés y Copán, costo adicional.</p>
+    </div>
+    <button onclick="muestra_oculta('contenido3')" class="btn btn-primary" form="contenido3">+</button>
+  </div>
+ </div>
+    <div id="nosotros">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15435.93134449425!2d-88.10030942192319!3d14.713562476782368!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f65c9830af4254f%3A0xe63f1381f69f65a9!2sAzacualpa%2C%20Santa%20B%C3%A1rbara!5e0!3m2!1ses-419!2shn!4v1724005096272!5m2!1ses-419!2shn" width="560" height="315" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/5yE6ePjw-dk?si=hJydu5_mx0Qq3h12" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+    <div align='center'>
+    <h2>Síguenos en nuestras redes sociales</h2>
+    </div>
+    <div class="social-buttons">
+        <a>
+        <a href="https://www.facebook.com/profile.php?id=100063638913612" class="social-button" target="_blank">
+            <img src="Imágenes/Iconos de redes/Facebook1.png" alt="Facebook">
+        </a>
+        <a href="https://www.instagram.com/bonbons_07/?igsh=b2lxOGV3b3I4c2Y0" class="social-button" target="_blank">
+            <img src="Imágenes/Iconos de redes/Insta1.png" alt="Instagram">
+        </a>
+        <a href="https://wa.me/+50433088033?text=Hola%20quiero%20más%20información" class="social-button">
+        <img src="Imágenes/Iconos de redes/WhatsApp1-.png" alt="Logo de WhatsApp">
+    </a>
+    </div>
+   <footer>
+    <div align='center'>
+        <em>Bonbons Fresas con Chocolate. Azacualpa, Santa Bárbara, Honduras, 2024. Todos los derechos reservados. </em>
+    </div>
+    <!-- footer es el pie de pagina -->
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384- w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>  
+    <script src="./main.js"> </script>
+</body>
+</html>
